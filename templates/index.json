@@ -90,18 +90,11 @@
         "color_scheme": "background-1",
         "layout": "image_first"
       }
-    },
-    "custom_liquid_GiUjq6": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class='lepopup-inline' data-slug='popup-2024-09-17-10-37-50'></div>"
-      }
     }
   },
   "order": [
     "image_banner",
     "featured_products",
-    "image_text",
-    "custom_liquid_GiUjq6"
+    "image_text"
   ]
 }
