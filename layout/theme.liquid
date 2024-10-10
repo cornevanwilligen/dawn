@@ -8,14 +8,26 @@
 <!-- Green Popups Script -->
 <script id="lepopup-remote" src="https://realsupps.messagebull.net/content/plugins/halfdata-green-popups/js/lepopup.min.js?ver=7.49" data-handler="https://realsupps.messagebull.net/ajax.php"></script>
 
-    <script>
-lepopup_add_event("onload", {
-    item:        "popup-2024-09-17-10-37-50-1",
-    item_mobile: "popup-2024-09-17-10-37-50-1",
-    mode:        "every-time",
-    period:      24,
-    delay:       0,
-    close_delay: 0
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Detect the screen width
+    if (window.innerWidth <= 768) {
+        // Mobile popup
+        lepopup_add_event("onscroll", {
+            item: "popup-2024-09-17-10-37-51",
+            mode: "every-time",
+            period: 24,
+            offset: "50%"
+        });
+    } else {
+        // Desktop and tablet popup
+        lepopup_add_event("onscroll", {
+            item: "popup-2024-09-17-10-37-50",
+            mode: "every-time",
+            period: 24,
+            offset: "50%"
+        });
+    }
 });
 </script>
 
