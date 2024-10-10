@@ -1,6 +1,38 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
+
+<!-- Load jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Green Popups Script -->
+<script id="lepopup-remote" src="https://realsupps.messagebull.net/content/plugins/halfdata-green-popups/js/lepopup.js?ver=7.49" data-handler="https://realsupps.messagebull.net/ajax.php"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Detect the screen width
+    if (window.innerWidth <= 768) {
+        // Mobile popup
+        lepopup_add_event("onscroll", {
+            item: "popup-2024-09-17-10-37-51",
+            mode: "every-time",
+            period: 24,
+            offset: "50%"
+        });
+    } else {
+        // Desktop and tablet popup
+        lepopup_add_event("onscroll", {
+            item: "popup-2024-09-17-10-37-50",
+            mode: "every-time",
+            period: 24,
+            offset: "50%"
+        });
+    }
+});
+</script>
+
+
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
